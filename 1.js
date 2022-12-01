@@ -11,3 +11,30 @@ const [name, skills, scores] = student
 
 //DESTRUCTURING JSSCORE AND REACTSCORE FROM SCORES
 const [,,jsScore,reactScore] = scores
+
+
+// 2.Write a function called convertArrayToObject which can convert the array to a structured object.
+
+const students = [
+    ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+    ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+  ]
+  
+  //FUNCTION TO COVERT ARRAY INTO OBJECT
+
+  function convertArrayToObject(arr){
+    let arrayOfObjects = []
+    for(let i=0; i<arr.length;i++){
+      arrayOfObjects.push(
+        {
+          name:arr[i][0],
+          skills:arr[i][1],
+          scores:arr[i][2]
+        })
+    }
+    return arrayOfObjects
+  
+  
+  }
+  
+  console.log(convertArrayToObject(students))
