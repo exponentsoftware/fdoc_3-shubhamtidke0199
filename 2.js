@@ -138,3 +138,22 @@ function idGenerator(length){
   }
   
   signIn('asab@asab.com','123456')
+
+
+// b. The products array has three elements and each of them has six properties.
+
+// a. Create a function called ***rateProduct*** which rates the product
+  function rateProduct(id,productName, rating){
+    let allProducts = []
+    let indexOfProduct
+  
+    products.map(product => allProducts.push(product.name))
+    indexOfProduct = allProducts.indexOf(productName)
+    
+    products[indexOfProduct].ratings.push({ userId:id, rate: rating })
+    console.log(products)
+  
+  }
+  
+  console.log(rateProduct('eefts','mobile phone',5))
+  
