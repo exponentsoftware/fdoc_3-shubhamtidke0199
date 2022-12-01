@@ -156,4 +156,26 @@ function idGenerator(length){
   }
   
   console.log(rateProduct('eefts','mobile phone',5))
+
+//   b. Create a function called ***averageRating*** which calculate the average rating of a product
+
+  function averageRating(productName){
+    let allProducts = []
+    let indexOfProduct
+    let totalRating = []
+  
+    products.map(product => allProducts.push(product.name))
+    indexOfProduct = allProducts.indexOf(productName)
+    
+    let ProductRating = products[indexOfProduct].ratings
+    ProductRating.map(rating => totalRating.push(rating.rate))
+    
+    let sumRating =  totalRating.reduce((acc,value)=> acc += value)
+  
+    let averageRating = sumRating/totalRating.length
+    return averageRating
+  
+  }
+  
+  console.log(averageRating('mobile phone'))
   
