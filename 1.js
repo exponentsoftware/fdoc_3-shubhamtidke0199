@@ -93,3 +93,7 @@ console.log(valueLength)
 //c. Find the length of skills object keys
 let skillsKeyLength = Object.keys(student1.skills).length
 console.log(skillsKeyLength)
+
+//d. check if the student object has graphicDesign property
+let hasGraphicDesign =  student1.hasOwnProperty('graphicDesign')
+console.log(hasGraphicDesign)
