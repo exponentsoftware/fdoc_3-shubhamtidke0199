@@ -116,3 +116,25 @@ function idGenerator(length){
   
   }
   
+
+//  b. Create a function called ***signIn*** which allows user to sign in to the application
+
+  function signIn(email, password){
+    let existingEmails = []
+    let userIndex 
+  
+    for(let i=0;i<users.length;i++){
+      existingEmails.push(users[i].email) 
+    }
+    userIndex =  existingEmails.indexOf(email)
+   
+  
+    if(userIndex >-1 && password===users[userIndex].password){
+      return 'You have logged in'
+     }else{
+      return 'Invalid credentials'
+    }
+  
+  }
+  
+  signIn('asab@asab.com','123456')
