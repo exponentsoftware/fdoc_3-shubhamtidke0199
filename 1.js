@@ -85,3 +85,7 @@ console.log(newObject)
 //a. Find the length of student object keys
 let keyLength = Object.keys(student1).length
 console.log(keyLength)
+
+//b. Find the length of the student object values
+let valueLength = Object.values(student1)
+console.log(valueLength)
