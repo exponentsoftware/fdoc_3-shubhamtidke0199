@@ -13,6 +13,7 @@ const [name, skills, scores] = student
 const [,,jsScore,reactScore] = scores
 
 
+
 // 2.Write a function called convertArrayToObject which can convert the array to a structured object.
 
 const students = [
@@ -38,6 +39,8 @@ const students = [
   }
   
   console.log(convertArrayToObject(students))
+
+
 
 // 3.Copy the student object to newStudent without mutating the original object. In the new object add the following ?
 
@@ -77,3 +80,8 @@ newObject.skills.dataBase.push({ skill: 'SQL', level: 8 })
 newObject.skills.dataScience.push('SQL')
 
 console.log(newObject)
+
+
+//a. Find the length of student object keys
+let keyLength = Object.keys(student1).length
+console.log(keyLength)
