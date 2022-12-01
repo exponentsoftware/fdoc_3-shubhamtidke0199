@@ -178,4 +178,29 @@ function idGenerator(length){
   }
   
   console.log(averageRating('mobile phone'))
+
+//   c. Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
+ 
+function likeProduct(id,productName){
+    let allProducts = []
+    let allLikes = []
+    let productIndex
+    let userLikeIndex
+    products.map(product => allProducts.push(product.name))
+    productIndex = allProducts.indexOf(productName)
+  
+    products[productIndex].likes.map(like => allLikes.push(like))
+    userLikeIndex = allLikes.indexOf(id)
+    if(userLikeIndex == -1){
+      products[productIndex].likes.push(id)
+      console.log("Liked")
+    }else{
+      products[productIndex].likes.splice(userLikeIndex,1)
+      console.log("Like removed")
+    }
+  
+  }
+  
+  console.log(likeProduct('f12cy','TV'))
+  
   
